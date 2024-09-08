@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert Book</title>
+    <style>
+        /* Body and form styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ff9966, #ff5e62, #843cf6, #43cea2);
+            background-size: 400% 400%;
+            animation: gradientBG 10s ease infinite;
+            color: #fff;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+        }
+
+        /* Gradient animation */
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Heading styling */
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Input fields styling */
+        input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            font-size: 1em;
+        }
+
+        /* Submit button styling */
+        input[type="submit"] {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 25px;
+            background-color: #4CAF50;
+            color: #fff;
+            font-size: 1.2em;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        /* Hover effect for submit button */
+        input[type="submit"]:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome To The Book Website</h1>
+    
+    <form method="post" action="Insert">
+        <label for="bname">Book Name:</label><br>
+        <input type="text" id="bname" name="bname" placeholder="Book Name"><br>
+        
+        <label for="bprice">Book Price:</label><br>
+        <input type="text" id="bprice" name="bprice" placeholder="Book Price"><br>
+        
+        <label for="author_name">Author Name:</label><br>
+        <input type="text" id="author_name" name="author_name" placeholder="Author Name"><br>
+        
+        <input type="submit" value="INSERT BOOK"><br>
+    </form>
+</body>
+</html>
